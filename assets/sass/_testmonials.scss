@@ -1,0 +1,34 @@
+.testmonials {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1130px;
+  margin: 0 auto;
+  margin-top: $section-spacing;
+  & > img {
+    margin-left: -20px;
+  }
+  &-content {
+    padding-top: 82px;
+    width: 100%;
+    max-width: 400px;
+    & .global-desc {
+      color: $gray;
+    }
+  }
+  &-achieve {
+    display: flex;
+    gap: 0 10px;
+    margin-bottom: 34px;
+  }
+  &-number {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 26px;
+    color: #f4a11a;
+  }
+  &-text {
+    color: #8189a3;
+  }
+}

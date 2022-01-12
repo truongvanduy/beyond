@@ -1,0 +1,23 @@
+mixin sectionHeader(classes, caption, captionBottom, heading, headingBottom, desc, descBottom)
+  .section-header.global-header(class= classes)
+    .global-caption(style=captionBottom)= caption
+    .global-heading.global-heading--large(style=headingBottom)= heading
+    .global-desc(style=descBottom)= desc
+    block 
+
+mixin serviceItem(imgSrc, title, desc)
+  .service-item
+    .service-img 
+      img(src= imgSrc, alt= title)
+    h4.service-title.global-heading.global-heading--medium= title 
+    p.service-desc= desc
+
+mixin getInTouchBtn()
+  button.btn.btn--primary.btn--get-in-touch.feature-btn Get in touch
+
+mixin postItem(imgSrc, title, desc)
+  .post-item
+    img(src= imgSrc, alt="")
+    .post-info 
+      .post-title= title 
+      .post-desc= desc

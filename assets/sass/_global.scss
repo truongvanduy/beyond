@@ -42,15 +42,21 @@ body {
   text-transform: capitalize;
   line-height: 1.5;
   cursor: pointer;
-}
-.btn--secondary {
-  border: 2px solid $light-gray;
-  background-color: #fff;
-  color: $primary-color;
-}
-.btn--primary {
-  background: linear-gradient(103.38deg, #f67102 5.1%, #f4a91e 86.29%);
-  color: white;
+  &--secondary {
+    border: 2px solid $light-gray;
+    background-color: #fff;
+    color: $primary-color;
+  }
+  &--primary {
+    background: linear-gradient(103.38deg, #f67102 5.1%, #f4a91e 86.29%);
+    color: white;
+  }
+  &--get-in-touch {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    width: 149px;
+    height: 56px;
+  }
 }
 .global {
   &-caption {
@@ -81,4 +87,7 @@ body {
     line-height: 2.6rem;
     color: $desc-color;
   }
+}
+main {
+  position: relative;
 }

@@ -1,0 +1,22 @@
+.feature {
+  width: 100%;
+  max-width: 1190px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 112px;
+  & img {
+    margin-left: -60px;
+    flex: 1;
+    margin-right: 32px;
+  }
+  &-content {
+    padding-top: 64px;
+    width: 100%;
+    max-width: 502px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

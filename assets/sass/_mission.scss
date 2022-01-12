@@ -1,0 +1,27 @@
+.mission {
+  display: flex;
+  width: 100%;
+  background-color: $section-bgc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-container {
+    padding: 0 155px;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-img {
+    order: 2;
+  }
+  & img {
+    object-fit: cover;
+  }
+  &-content {
+    order: 1;
+    width: 502px;
+    margin-right: -151px;
+  }
+}

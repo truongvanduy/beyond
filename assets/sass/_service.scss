@@ -1,0 +1,58 @@
+.service {
+  margin-bottom: 76px;
+  &-header {
+    margin: 0 auto;
+    margin-top: $section-spacing;
+    width: 100%;
+    max-width: 620px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    & .global-heading {
+      width: 426px;
+    }
+  }
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+  }
+  &-item {
+    border: 2px solid $service-item-border;
+    border-radius: 13px;
+    width: 100%;
+    max-width: 334px;
+    padding: 40px 44px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.25s ease-in-out;
+    &:hover {
+      border: 2px solid #fff;
+      box-shadow: 0px 24px 60px rgba(94, 122, 148, 0.1);
+      cursor: pointer;
+    }
+  }
+  &-img {
+    margin-bottom: 26px;
+    width: 67px;
+    height: 67px;
+    border-radius: 100rem;
+    background: #f4f7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-title {
+    margin-bottom: 19px;
+  }
+  &-desc {
+    color: #7f8ea1;
+    margin-bottom: 44px;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
