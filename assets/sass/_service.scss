@@ -1,5 +1,8 @@
 .service {
-  margin-bottom: 76px;
+  max-width: 1108px;
+  margin: 0 auto 76px;
+  padding-left: 20px;
+  padding-right: 20px;
   &-header {
     margin: 0 auto;
     margin-top: $section-spacing;
@@ -24,7 +27,6 @@
     border: 2px solid $service-item-border;
     border-radius: 13px;
     width: 100%;
-    max-width: 334px;
     padding: 40px 44px;
     display: flex;
     align-items: center;

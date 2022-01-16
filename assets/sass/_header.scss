@@ -1,12 +1,11 @@
 .nav {
   width: 100%;
   max-width: 1120px;
+  padding: 30px 0px 110px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
-  margin-bottom: 20px;
   color: $nav-color;
   &-authenication {
     display: flex;
@@ -53,12 +52,15 @@
 }
 .header {
   width: 100%;
-  max-width: 1120px;
+  max-width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
-  padding-bottom: calc($section-spacing / 2);
+  padding-bottom: 128px;
   &-main {
     display: flex;
     align-items: center;
+    gap: 0 55px;
   }
   &-content {
     width: 100%;
@@ -76,7 +78,10 @@
     margin-bottom: 48px;
   }
   &-img {
-    margin-right: -120px;
+    & img {
+      transform-origin: bottom left;
+      transform: scale(1.15);
+    }
   }
   &-action {
     display: flex;

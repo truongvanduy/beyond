@@ -1,16 +1,19 @@
 .newsletter {
-  background-color: $form-bgc;
-  width: 100%;
-  height: 382px;
-  max-width: 1130px;
+  max-width: 1170px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: $section-spacing auto;
-  border-radius: 67px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0 19px;
-  padding-left: 100px;
-  padding-right: 100px;
+  &-container {
+    background-color: $form-bgc;
+    width: 100%;
+    height: 382px;
+    border-radius: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 19px;
+    padding: 40px;
+  }
   &-content {
     width: 404px;
   }
