@@ -1,0 +1,73 @@
+.footer {
+  background-color: $footer-bgc;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: $footer-text;
+  &-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 90px 20px 32px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &-info {
+    display: flex;
+    padding-bottom: 48px;
+  }
+  &-company {
+    padding-right: 200px;
+    padding-top: 16px;
+    width: 40%;
+    &-heading {
+      display: flex;
+      align-items: center;
+      margin-bottom: 21.36px;
+      & img + img {
+        margin-left: 12.32px;
+      }
+    }
+    &-text {
+      margin-bottom: 27.43px;
+    }
+    &-social {
+      width: 112px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &-lists {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 60%;
+    line-height: 37px;
+  }
+  &-list {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &-heading {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    margin-bottom: 10px;
+    color: $footer-heading-text;
+  }
+  &-rights {
+    width: 100%;
+    padding-top: 30px;
+    border-top: 1px solid #11317c;
+    text-align: center;
+    & p {
+      color: $footer-rights-text;
+    }
+  }
+}

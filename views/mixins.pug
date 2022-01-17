@@ -21,3 +21,17 @@ mixin postItem(imgSrc, title, desc)
     .post-info 
       .post-title.global-heading.global-heading--small= title 
       .post-desc= desc
+
+mixin footerSocialLink(href, imgSrc)
+  a.footer-company-link(href= href) 
+    img(srcset= imgSrc)
+
+mixin footerItem(href, text)
+  li.footer-item
+    a.footer-link(href= href)= text
+
+mixin footerList(heading)
+  .footer-block
+    h3.footer-heading= heading
+    ul.footer-list
+      block 

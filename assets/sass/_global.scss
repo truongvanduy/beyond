@@ -19,6 +19,11 @@ a {
   color: inherit;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 body {
   font-size: 1.6rem;
   color: $gray;
