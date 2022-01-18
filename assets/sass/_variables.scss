@@ -14,3 +14,12 @@ $footer-text: #afaccd;
 $footer-heading-text: #d9e1f0;
 $footer-rights-text: #8b9fcf;
 $section-spacing: 140px;
+:root {
+  --section-spacing: 140px;
+  @media screen and (max-width: 1023.98px) {
+    --section-spacing: 70px;
+  }
+  @media screen and (max-width: 767.98px) {
+    --section-spacing: 40px;
+  }
+}

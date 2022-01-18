@@ -9,7 +9,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
   font-weight: inherit;
 }
 
@@ -46,6 +46,7 @@ body {
   border-radius: 100rem;
   text-transform: capitalize;
   line-height: 1.5;
+  padding: 12px 32px;
   cursor: pointer;
   &--secondary {
     border: 2px solid $light-gray;
@@ -61,6 +62,7 @@ body {
     line-height: 1.5;
     width: 149px;
     height: 56px;
+    padding: 0;
   }
 }
 .global {
@@ -75,6 +77,14 @@ body {
     color: $heading-color;
     font-weight: 700;
     line-height: 1.5;
+    @media screen and (max-width: 1023.98px) {
+      width: 100%;
+      max-width: 500px;
+    }
+    @media screen and (max-width: 767.98px) {
+      font-size: 3rem;
+      max-width: 100%;
+    }
     &--xlarge {
       font-size: 5rem;
       line-height: 5.6rem;
@@ -99,4 +109,14 @@ body {
 }
 main {
   position: relative;
+}
+
+.display-none {
+  display: none;
+}
+
+@media screen and (max-width: 767.98px) {
+  .btn {
+    padding: 10px 20px;
+  }
 }

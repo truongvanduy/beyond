@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <title>Beyond</title>
   </head>
   <body> 
@@ -25,7 +27,8 @@
           <div class="nav-authenication">
             <button class="btn btn--secondary nav-btn">Login</button>
             <button class="btn btn--primary nav-btn">Sign Up</button>
-          </div>
+          </div><span class="toggle"> <i class="fas fa-bars"></i></span>
+          <div class="overlay display-none"></div>
         </nav>
         <div class="header-main"> 
           <div class="header-content"> 
@@ -34,8 +37,10 @@
             <p class="global-desc header-desc">You need to get positive results when you spend hard earned revenue and time on any marketing effort. Great returns on marketing and promotions. </p>
             <div class="header-action"> 
               <div class="btn btn--primary header-get-started">Get Started </div>
-              <div class="btn btn--secondary header-play" id="header-play"> <img srcset="./assets/img/header-play.png 2x" alt=""></div>
-              <label class="header-watch-video" for="header-play">Watch Video</label>
+              <label class="header-watch" for="header-play">
+                <div class="btn btn--secondary header-play" id="header-play"> <img srcset="./assets/img/header-play.png 2x" alt=""></div>
+                <div class="header-watch-video">Watch Video</div>
+              </label>
             </div>
           </div>
           <div class="header-img"> <img srcset="./assets/img/header-img.png 2x"></div>
@@ -54,27 +59,27 @@
         <div class="section-header global-header service-header">
           <div class="global-caption" style="margin-bottom: 25px">WHAT WE DO</div>
           <div class="global-heading global-heading--large" style="margin-bottom: 32px">Grow Your Business With Ringo</div>
-          <div class="global-desc" style="margin-bottom: 73px">tempus, lectus risus In' perdiel tellus, sed faucibus ipsum ipsurn nun neque. </div>
+          <div class="global-desc">tempus, lectus risus In' perdiel tellus, sed faucibus ipsum ipsurn nun neque. </div>
         </div>
         <div class="service-container"> 
-          <div class="service-item">
+          <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
             <div class="service-img"> <img src="./assets/img/service-search.svg" alt="Search Engine"/></div>
             <h4 class="service-title global-heading global-heading--medium">Search Engine</h4>
             <p class="service-desc">Twit are xcet Frond, rnatie boy grub it's tell gone to pot MI Mrs nut butts horse play blow </p>
           </div>
-          <div class="service-item">
+          <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
             <div class="service-img"> <img src="./assets/img/service-email.svg" alt="Email Marketing"/></div>
             <h4 class="service-title global-heading global-heading--medium">Email Marketing</h4>
             <p class="service-desc">Twit are xcet Frond, rnatie boy grub it's tell gone to pot MI Mrs nut butts horse play blow </p>
           </div>
-          <div class="service-item">
+          <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
             <div class="service-img"> <img src="./assets/img/service-file.svg" alt="Media Marketing"/></div>
             <h4 class="service-title global-heading global-heading--medium">Media Marketing</h4>
             <p class="service-desc">Twit are xcet Frond, rnatie boy grub it's tell gone to pot MI Mrs nut butts horse play blow </p>
           </div>
         </div>
       </section>
-      <section class="feature"><img srcset="./assets/img/feature-img.svg" alt="">
+      <section class="feature"><img srcset="./assets/img/feature-img.png 2x" alt="">
         <div class="section-header global-header feature-content">
           <div class="global-caption" style="margin-bottom: 25px">WHO WE ARE</div>
           <div class="global-heading global-heading--large" style="margin-bottom: 25px">Top #1 Marketing Agency in the World</div>
@@ -84,7 +89,7 @@
       </section>
       <section class="mission"> 
         <div class="mission-container">
-          <div class="mission-img"><img srcset="./assets/img/mission-img.svg" alt=""></div>
+          <div class="mission-img"><img srcset="./assets/img/mission-img.png 2x" alt=""></div>
           <div class="section-header global-header mission-content">
             <div class="global-caption" style="margin-bottom: 18px">OUR MISSION &amp; GOAL</div>
             <div class="global-heading global-heading--large" style="margin-bottom: 25px">Realize Your Business Goals For Profit</div>
@@ -191,5 +196,8 @@
         </div>
       </div>
     </footer>
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
   </body>
 </html>

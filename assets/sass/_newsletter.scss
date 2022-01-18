@@ -2,7 +2,7 @@
   max-width: 1170px;
   padding-left: 20px;
   padding-right: 20px;
-  margin: $section-spacing auto;
+  margin: var(--section-spacing) auto;
   &-container {
     background-color: $form-bgc;
     width: 100%;
@@ -52,5 +52,46 @@
   }
   &-btn {
     width: 142px;
+  }
+}
+@media screen and (max-width: 1023.98px) {
+  .newsletter {
+    margin-top: 0;
+    &-container {
+      height: unset;
+      flex-direction: column;
+      align-items: center;
+      gap: 48px 0;
+      text-align: center;
+    }
+    &-content {
+      max-width: 100%;
+    }
+    &-text {
+      max-width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .form {
+    &-heading {
+      font-size: 3rem;
+    }
+    &-group {
+      flex-direction: column;
+      background-color: $form-bgc;
+      height: unset;
+      border-radius: 0;
+      align-items: center;
+      gap: 30px 0;
+    }
+    &-control,
+    &-btn {
+      height: 53px;
+    }
+    &-control {
+      width: 100%;
+      display: block;
+    }
   }
 }

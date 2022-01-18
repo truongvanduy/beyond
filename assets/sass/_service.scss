@@ -5,7 +5,7 @@
   padding-right: 20px;
   &-header {
     margin: 0 auto;
-    margin-top: $section-spacing;
+    margin-top: var(--section-spacing);
     width: 100%;
     max-width: 620px;
     text-align: center;
@@ -13,8 +13,13 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    & .global-heading {
-      width: 426px;
+    & .global {
+      &-heading {
+        width: 426px;
+      }
+      &-desc {
+        margin-bottom: 73px;
+      }
     }
   }
   &-container {
@@ -50,11 +55,50 @@
   }
   &-title {
     margin-bottom: 19px;
+    text-align: center;
   }
   &-desc {
     color: #7f8ea1;
     margin-bottom: 44px;
     font-size: 1.4rem;
     text-align: center;
+  }
+}
+@media screen and (max-width: 1023.98px) {
+  .service {
+    margin-bottom: 0;
+    &-header .global {
+      &-desc {
+        margin-bottom: 40px;
+      }
+    }
+    &-container {
+      display: grid;
+      justify-content: flex-start;
+      grid-auto-columns: 320px;
+      grid-auto-flow: column;
+      grid-gap: 33px;
+      overflow: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-overflow-scrolling: touch;
+      scroll-padding: 40px;
+      padding: 0 24px 80px;
+      margin-inline: -20px;
+      grid-template-columns: unset;
+    }
+    &-container::-webkit-scrollbar {
+      display: none;
+      width: 0;
+    }
+    &-container > * {
+      scroll-snap-align: start;
+    }
+    &-desc {
+      margin-bottom: 30px;
+    }
   }
 }
