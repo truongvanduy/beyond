@@ -193,4 +193,22 @@
       gap: 30px 0;
     }
   }
+  .nav {
+    justify-content: space-between;
+  }
+  .menu {
+    & li {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    & li:nth-child(5) {
+      border-bottom: 1px solid $primary-color;
+    }
+    & .nav-btn {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+  }
 }

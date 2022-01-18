@@ -73,12 +73,17 @@
   }
 }
 @media screen and (max-width: 767.98px) {
+  .newsletter-form {
+    max-width: 500px;
+  }
   .form {
     &-heading {
       font-size: 3rem;
     }
     &-group {
       flex-direction: column;
+      width: 100%;
+      align-self: stretch;
       background-color: $form-bgc;
       height: unset;
       border-radius: 0;

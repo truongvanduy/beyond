@@ -77,14 +77,6 @@ body {
     color: $heading-color;
     font-weight: 700;
     line-height: 1.5;
-    @media screen and (max-width: 1023.98px) {
-      width: 100%;
-      max-width: 500px;
-    }
-    @media screen and (max-width: 767.98px) {
-      font-size: 3rem;
-      max-width: 100%;
-    }
     &--xlarge {
       font-size: 5rem;
       line-height: 5.6rem;
@@ -113,6 +105,39 @@ main {
 
 .display-none {
   display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1023.98px) {
+  .global-heading {
+    &--xlagre,
+    &--large {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .hide-on-tablet {
+      display: none !important;
+    }
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+  .global-heading {
+    &--xlagre,
+    &--large {
+      font-size: 3rem;
+      max-width: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: 767.98px) {

@@ -140,18 +140,6 @@ body {
   font-weight: 700;
   line-height: 1.5;
 }
-@media screen and (max-width: 1023.98px) {
-  .global-heading {
-    width: 100%;
-    max-width: 500px;
-  }
-}
-@media screen and (max-width: 767.98px) {
-  .global-heading {
-    font-size: 3rem;
-    max-width: 100%;
-  }
-}
 .global-heading--xlarge {
   font-size: 5rem;
   line-height: 5.6rem;
@@ -181,6 +169,32 @@ main {
   display: none;
 }
 
+@media screen and (min-width: 1024px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1023.98px) {
+  .global-heading--xlagre, .global-heading--large {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 1023.98px) and (min-width: 768px) {
+  .hide-on-tablet {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .global-heading--xlagre, .global-heading--large {
+    font-size: 3rem;
+    max-width: 100%;
+  }
+}
 @media screen and (max-width: 767.98px) {
   .btn {
     padding: 10px 20px;
@@ -375,6 +389,24 @@ main {
     flex-direction: column;
     gap: 30px 0;
   }
+
+  .nav {
+    justify-content: space-between;
+  }
+
+  .menu li {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu li:nth-child(5) {
+    border-bottom: 1px solid #ff7d00;
+  }
+  .menu .nav-btn {
+    margin-top: 20px;
+    margin-left: 0;
+  }
 }
 .brand {
   width: 100%;
@@ -533,6 +565,7 @@ main {
   }
   .feature-content {
     max-width: unset;
+    padding-top: 0;
   }
 }
 .mission {
@@ -542,7 +575,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: calc(var(--section-spacing) - 23px);
+  padding-top: calc(var(--section-spacing) * 0.85);
   padding-bottom: calc(var(--section-spacing) / 2);
 }
 .mission-container {
@@ -803,11 +836,17 @@ main {
   }
 }
 @media screen and (max-width: 767.98px) {
+  .newsletter-form {
+    max-width: 500px;
+  }
+
   .form-heading {
     font-size: 3rem;
   }
   .form-group {
     flex-direction: column;
+    width: 100%;
+    align-self: stretch;
     background-color: #f4f6fd;
     height: unset;
     border-radius: 0;

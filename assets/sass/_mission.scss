@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: calc(var(--section-spacing) - 23px);
+  padding-top: calc(var(--section-spacing) * 0.85);
   padding-bottom: calc(var(--section-spacing) / 2);
   &-container {
     padding: 0 20px;
