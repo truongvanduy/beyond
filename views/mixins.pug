@@ -17,7 +17,7 @@ mixin getInTouchBtn()
 
 mixin postItem(imgSrc, title, desc)
   .post-item
-    img(srcset= imgSrc, alt="")
+    img(srcset= imgSrc)
     .post-info 
       .post-title.global-heading.global-heading--small= title 
       .post-desc= desc
