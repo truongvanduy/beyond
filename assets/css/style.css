@@ -203,12 +203,18 @@ main {
 .nav {
   width: 100%;
   max-width: 1120px;
-  padding: 30px 0px 110px;
+  padding: 30px 0px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #635f85;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  padding-inline: 20px;
 }
 .nav-authenication {
   display: flex;
@@ -267,6 +273,7 @@ main {
   display: flex;
   align-items: center;
   gap: 0 55px;
+  margin-top: calc(var(--section-spacing) + 50px);
 }
 .header-content {
   width: 100%;
@@ -391,6 +398,7 @@ main {
   }
 
   .nav {
+    padding-block: 20px;
     justify-content: space-between;
   }
 
@@ -836,6 +844,9 @@ main {
   }
 }
 @media screen and (max-width: 767.98px) {
+  .newsletter-heading {
+    font-size: 3rem;
+  }
   .newsletter-form {
     max-width: 500px;
   }
