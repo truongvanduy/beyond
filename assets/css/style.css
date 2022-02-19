@@ -204,14 +204,14 @@ main {
   width: 100%;
   max-width: 1120px;
   padding: 30px 0px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #635f85;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
   background-color: #fff;
   padding-inline: 20px;
